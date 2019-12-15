@@ -1,5 +1,5 @@
-import express from "express";
-import routes from "./routes";
+import express from 'express';
+import routes from './routes';
 
 class App {
   constructor() {
@@ -7,6 +7,7 @@ class App {
     this.midlewares();
     this.routes();
   }
+
   midlewares() {
     this.server.use(express.json());
   }
